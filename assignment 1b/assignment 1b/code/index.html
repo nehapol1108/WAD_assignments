@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assign 1 b</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display">
+        <button class="add_user_btn">Add User</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Sr No</th>
+              <th>Name</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <div class="modal_container" id="modal_container">
+        <div class="modal">
+          <div class="modal_actions">
+            <h2>Details</h2>
+            <button class="close_btn">X</button>
+          </div>
+          <div class="modal_form">
+            <form>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="text">Name</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="text">Username</label>
+                <input type="text" id="username" />
+              </div>
+              <div class="form-group">
+                <label for="text">City</label>
+                <input type="text" id="city" />
+              </div>
+              <div class="form-group">
+                <label for="text">phone</label>
+                <input type="text" id="phone" />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" />
+              </div>
+              <button type="submit" id="submit_btn" class="submit_btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

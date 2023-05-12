@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_container {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  display: none;
+  background-color: white;
+  overflow: auto;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+table,
+th,
+td {
+  border: 1px solid;
+}
+.add_user_btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.modal_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.close_btn {
+  font-size: 25px;
+  font-weight: bold;
+  color: #aaaaaa;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.close_btn:hover,
+.close_btn:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal_form {
+  padding: 20px;
+  background-color: #ffffff;
+}
+.form-group {
+  display: block;
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.submit_btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit_btn:hover {
+  background-color: #0069d9;
+}
